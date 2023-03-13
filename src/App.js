@@ -8,10 +8,10 @@ function App() {
   let [pageNumber, setPageNumber] = useState(1);
   let [fetchedData, updateFetchedData] = useState([])
   let { info, results } = fetchedData;
-  
+
   let api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}`;
 
-  // Use an Immediately Invoked Function Expression (IIFE) - runs as soon as it's defined.
+  // Use an Immediately Invoked Function Expression (IIFE) - runs as soon as it's defined as per below.
   useEffect(() => {
 
     (async function (){
@@ -35,9 +35,8 @@ function App() {
           </div>
           <div className="col-8">
             <div className="row">
-              <Cards />
-              <Cards />
-              <Cards />
+              <Cards results={results}/>
+              
             </div>
           </div>
         </div>

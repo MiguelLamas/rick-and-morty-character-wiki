@@ -9,13 +9,13 @@ const Pagination = ({ info, pageNumber, setPageNumber }) => {
       forcePage={pageNumber === 1? 0 : pageNumber -1}
       nextLabel="Next"
       previousLabel="Prev"
-      nextClassName="btn btn-primary btn-active"
-      previousClassName="btn btn-primary btn-active"
-      previousLinkClassName="text-white"
-      nextLinkClassName="text-white"
-      pageClassName="page-item"
-      pageLinkClassName="page-link"
-      activeClassName="active"
+      nextclassNameName="btn btn-primary btn-active"
+      previousclassNameName="btn btn-primary btn-active"
+      previousLinkclassNameName="text-white"
+      nextLinkclassNameName="text-white"
+      pageclassNameName="page-item"
+      pageLinkclassNameName="page-link"
+      activeclassNameName="active"
       onPageChange={(data) => {
         setPageNumber(data.selected + 1);
       }}

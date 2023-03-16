@@ -1,6 +1,9 @@
-import React from 'react'
+import React from 'react';
+import FilterBTN from "../FilterBTN";
 
 const Gender = () => {
+let genders = ["female", "male", "genderless", "unknown"];
+
   return (
     <div className="accordion-item">
           <h2 className="accordion-header" id="headingOne">
@@ -22,6 +25,9 @@ const Gender = () => {
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body"></div>
+            {genders.map((items, index) => (
+              <FilterBTN key={index} name="gender" index={index} items={items} />
+            ))};
           </div>
         </div>
   ) 

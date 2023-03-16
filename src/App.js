@@ -6,6 +6,7 @@ import Cards from "./components/Cards/Cards";
 import Pagination from './components/Pagination/Pagination';
 import Search from './components/Search/Search';
 
+
 function App() {
   let [pageNumber, setPageNumber] = useState(1);
   let [search, setSearch] = useState("");

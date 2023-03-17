@@ -1,26 +1,29 @@
 import React from "react";
 
-const FilterBTN = ({ name, index, items }) => {
+const FilterBTN = ({ name, index, items, setStatus, setPageNumber }) => {
   return (
     <div>
-   <style jsx>
-    {`
-
-    .x:checked + label{
-      background-color: #0b5ed7;
-      color: white;
-    }
-    input[type="radio"] {
-      display: none;
-    }
-    `}
-   </style>
+      <style jsx>
+        {`
+          .x:checked + label {
+            background-color: #0b5ed7;
+            color: white;
+          }
+          input[type="radio"] {
+            display: none;
+          }
+        `}
+      </style>
       <div className="form-check">
         <input
+          onClick={() => {
+            setPageNumber(1);
+            setStatus(items);
+          }}
           className="form-check-input x"
           type="radio"
           name={name}
-          id={`${name}-${index}`}  
+          id={`${name}-${index}`}
         />
         <label class="btn btn-outline-primary" for={`${name}-${index}`}>
           {items}

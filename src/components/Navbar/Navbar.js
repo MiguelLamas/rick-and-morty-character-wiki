@@ -1,15 +1,16 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
+import "../../App.css";
 
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container">
-        <Link className="fs-3 ubuntu navbar-brand">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light mb-4">
+      <div className="container">
+        <Link to="/" className="fs-3 ubuntu navbar-brand">
           Rick & Morty Character <span className="text-primary">WiKi</span>
         </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -17,18 +18,30 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <style jsx>
+            {`
+            button[aria-expanded="false"] > .close { 
+              display: none;
+            }
+            button[aria-expanded="true"] > .open {
+              display: none;
+            }
+            `}
+          </style>
 
-          <div class="navbar-nav">
-            <NavLink to="/" class="nav-link">
+          <i className="fas fa-bars open fw-bold text-dark"></i>
+          <i className="fas fa-times close fw-bold text-dark"></i>
+        </button>
+        <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+
+          <div className="navbar-nav">
+            <NavLink activeClassName="active" to="/" className="nav-link">
               Characters
             </NavLink> 
-            <NavLink to="/episodes" class="nav-link">
+            <NavLink to="/episodes" className="nav-link">
               Episodes
             </NavLink>
-            <NavLink to="/location" class="nav-link">
+            <NavLink to="/location" className="nav-link">
               Location
             </NavLink>
           </div>

@@ -5,8 +5,10 @@ const InputGroup = ({ total, name, setId }) => {
     <div className="input-group mb-3">
       <select 
       onChange = {(e) => setId(e.target.value)}
-      className="form-select" id={name}>
-        <option selected>Choose...</option>
+      className="form-select" id={name}
+      >
+        <option value="1" selected>Choose...</option>
+
         {[...Array(total).keys()].map((items) => {
           return (
             <option value={items + 1}>

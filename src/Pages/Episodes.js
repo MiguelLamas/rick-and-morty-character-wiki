@@ -35,7 +35,7 @@ const Episodes = () => {
           <span className="text-primary">{name === "" ? "Unknown" : name}</span>
         </h1>
         <h5 className="text-center">
-          Air Date - {air_date === "" ? "Unknown" : air_date}
+          Air Date : {air_date === "" ? "Unknown" : air_date}
         </h5>
       </div>
       <div className="row">

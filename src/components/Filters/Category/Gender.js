@@ -2,7 +2,7 @@ import React from 'react';
 import FilterBTN from "../FilterBTN";
 
 const Gender = ({ setGender , setPageNumber }) => {
-let genders = ["female", "male", "genderless", "unknown"];
+let genders = ["female", "male", "genderless", "unknown"]
 
   return (
     <div className="accordion-item">
@@ -33,7 +33,7 @@ let genders = ["female", "male", "genderless", "unknown"];
               name="gender" 
               index={index} 
               items={items} />
-            ))};
+            ))}
           </div>
         </div>
   ) 

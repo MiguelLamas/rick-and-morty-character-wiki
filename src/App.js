@@ -6,6 +6,7 @@ import Cards from "./components/Cards/Cards";
 import Pagination from "./components/Pagination/Pagination";
 import Search from "./components/Search/Search";
 import Navbar from "./components/Navbar/Navbar";
+import CardDetails from "./components/Cards/CardDetails";
 
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -21,8 +22,13 @@ function App() {
 
 <Routes>
   <Route path="/" element={<Home />} />
+  <Route path="/:id" element={<CardDetails />} />
+
   <Route path="/episodes" element={<Episodes />} />
+  <Route path="/episodes/:id" element={<CardDetails />} />
+
   <Route path="/location" element={<Location />} />
+  <Route path="/location/:id" element={<CardDetails />} />
 </Routes>
 
   </Router>

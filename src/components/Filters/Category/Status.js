@@ -34,7 +34,6 @@ const Status = ({ setStatus, setPageNumber }) => {
               items={items}
             />
           ))}
-          ;
         </div>
       </div>
     </div>

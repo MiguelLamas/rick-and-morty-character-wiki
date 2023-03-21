@@ -32,7 +32,7 @@ const Species = ({ setSpecies , setPageNumber }) => {
             name="species" 
             index={index} 
             items={items} />
-          ))};
+          ))}
       </div>
     </div>
   </div>

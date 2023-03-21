@@ -29,7 +29,7 @@ const Episodes = () => {
 
   return (
     <div className="container">
-      <div className="row mb-4 ">
+      <div className="row mb-4">
         <h1 className="text-center mb-3">
           Episode :{" "}
           <span className="text-primary">{name === "" ? "Unknown" : name}</span>
@@ -39,12 +39,12 @@ const Episodes = () => {
         </h5>
       </div>
       <div className="row">
-        <div className="col-3">
+        <div className="col-lg-3 col-12">
         <h4 className="text-center mb-4">Pick Episodes</h4>
         <InputGroup setId={setId} name="Episode" total={51} />
 
         </div>
-        <div className="col-8">
+        <div className="col-lg-8 col-12">
           <div className="row">
             <Cards page="/episodes/" results={results} />
           </div>

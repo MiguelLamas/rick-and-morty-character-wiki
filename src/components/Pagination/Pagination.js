@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import ReactPaginate from "react-paginate";
 
 const Pagination = ({ info, pageNumber, setPageNumber }) => {
+  let pageChange = (data) => {
+    setPageNumber(data.selected + 1);
+  };
+
   let [width, setWidth] = useState(window.innerWidth);
 
   let updateDimension = () => {
@@ -42,9 +46,7 @@ const Pagination = ({ info, pageNumber, setPageNumber }) => {
         marginPagesDisplayed={width < 576 ? 1 : 2}
         pageRangeDisplayed={width < 576 ? 1 : 2}
         activeClassName="active"
-        onPageChange={(data) => {
-          setPageNumber(data.selected + 1);
-        }}
+        onPageChange={pageChange}
         pageCount={info?.pages} // if info? exists then add the .pages to it. pages == info.pages == 42
       />
     </>

@@ -1,6 +1,6 @@
 # Rick & Morty Character Wiki
 
-This Rick & Morty Character Wiki is a React JS application built using React, Node.js, Bootstrap, Sass and an Open API.
+This Rick & Morty Character Wiki is a React JS application built using React, JavaScript, Node.js, Bootstrap, Sass and an Open API.
 
 The app allows users to search for their favourite Rick & Morty characters via a search bar and data filtering (including filter by status, species or gender) section. The users can click on a specific character card to get full available infomation for each character (their name, status, gender, species, type, location and origin).
 
@@ -16,16 +16,24 @@ Users can also check which character/s have appeared in specific episodes and lo
 * Creating a Search bar.
 * Data Filtering.
 * Dynamic Routing.
-* Now I can easily and efficiently use React JS and Bootstrap to handle projects.
+* How to easily and efficiently use React JS and Bootstrap to handle projects.
 * Making the app fully responsive for small, medium and large devices.
 
 ## Built with:
 
 * React.js
+* JavaScript
 * Node.js
 * Bootstrap
 * Sass
 * Rick & Morty Open API
+
+## Project Setup & Running:
+
+* Prerequisites
+  * None
+
+* Clone Repo `
 
 
 

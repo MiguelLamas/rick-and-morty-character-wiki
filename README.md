@@ -33,13 +33,26 @@ Users can also check which character/s have appeared in specific episodes and lo
 * Prerequisites
   * None
 
-* Clone Repo `
+* Clone Repo `https://github.com/MiguelLamas/rick-and-morty-character-wiki.git`
+
+* Before starting the project, follow these steps to get it set up:
+
+  * Open the project folder in VS code
+  * Open your terminal and run these commands below by one:
+  * `npx create-react-app .`
+  * `npm install bootstrap`
+  * `npm install @popperjs/core --save`
+  * `npm install sass`
+  * `npm install react-router-dom`
+  * `npm install react-paginate --save`
+  * `npm start`
+
+## Developer:
+
+* Miguel Lamas - GitHub
 
 
 
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

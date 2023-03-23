@@ -6,7 +6,26 @@ The app allows users to search for their favourite Rick & Morty characters via a
 
 Users can also check which character/s have appeared in specific episodes and locations using a drop down menu created in the corresponding Episodes or Location sections of the app. In total there are 800+ characters, each page will display up to 20 characters, so I've added a pagination system at the bottom of each page to allow the user to view all the results available if needed.
 
-# Main Learning Points:
+## Main Learning Points:
+
+* Using `fetch()` to get data from an API and `map()` results.
+* Reading API docs and understanding how to use them.
+* Practice creating an app which included asynchronous programming, async, await, fetch(), React Hooks (useState, useEffect).
+* Bootstrap and Sass - for styling.
+* Implementing Pagination.
+* Creating a Search bar.
+* Data Filtering.
+* Dynamic Routing.
+* Now I can easily and efficiently use React JS and Bootstrap to handle projects.
+* Making the app fully responsive for small, medium and large devices.
+
+## Built with:
+
+* React.js
+* Node.js
+* Bootstrap
+* Sass
+* Rick & Morty Open API
 
 
 

@@ -28,6 +28,10 @@ Users can also check which character/s have appeared in specific episodes and lo
 * Sass
 * Rick & Morty Open API
 
+## Deployed with:
+
+* Deployed using Netlify
+
 ## Project Setup & Running:
 
 * Prerequisites
@@ -46,6 +50,10 @@ Users can also check which character/s have appeared in specific episodes and lo
   * `npm install react-router-dom`
   * `npm install react-paginate --save`
   * `npm start`
+
+* To make your dev experience easier, download these VS code extensions:
+  * ES7 React/Redux/GraphQL/React-Native snippets
+  * ESLint
 
 ## Developer:
 
